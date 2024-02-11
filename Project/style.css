@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* เส้นกรอบ */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; เอาไว้ เช็ค กรอบก็ได้ขนาดเท่าไหร่*/ 
+  padding: 10px;
+  background-color: #333;
+}
+/* Logo หรือ Mysite ด้านบน เอาปรับสีขนาด เอาเส้นใต้ออก */
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0 0 3px #00fffb, 0 0 5px #0081bc;
+}
+/* เกี่ยวกัยเมนู วางให้เรีียงกันยังไง */
+.menu {
+  display: flex;
+  list-style: none;
+}
+/* ให้เมนู ห่างกันเท่าไหร่ */
+.menu li {
+  margin-left: 10px;
+}
+/* เกียวกัยสีเมนู กะ ้เอาขีดเส้นใต้ออก */
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 0 3px #00fffb, 0 0 5px #0081bc;
+}
+
+/* .text {
+  text-shadow: 0 0 20px #00ffb, 0 0 40px #0081bc;
+} */
+
+/* เกี่ยวกับ พื้นหลังของแบนเนอร์ ทั้งตัวหนังสือ กับ ให้รูปมันอยู่ต้องกลาง justify-content center ทำให้อยู่ตรงกลาง*/
+
+.banner {
+  background-color: teal;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ข้อความในแบนเนอร์อยู่ตรงกลาง */
+
+.banner-info {
+  text-align: center;
+}
+
+/* เกียวกับขนาดพื้นหลัง border-radius คือความกลมของรูป */
+
+.banner-info img {
+  width: 250px;
+  border-radius: 100%;
+}
+/* แบ่งขอลัม เป็น 3 ช่อง ที่ไว้ใส่ข้อมูล */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr); ใช้ได้เหมือนกันกับด้านบน */
+  background-color: #fff;
+  color: #333;
+}
+ /* แยกให้มันออกจากกัน */
+main div {
+  padding: 20px;
+}
+/* ให้มันห่างจากหัวข้อ */
+main div p {
+  margin-top: 10px;
+}
+/* ใช้ปรับขนาดรูปในข้อความ */
+main img {
+  width: 100%;
+  border-radius: 20px;
+}
+/* สีพื้เนหลังของเท้า หรือ ส่วนจบนั้นแหละ */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
